@@ -1,1 +1,34 @@
-new branch changes
+1)	//Створити локальний репозиторій (консоль)
+	$ git init -q "Lecture2_part2"
+
+3) не зрозумів як саме приєднати?! //Приєднати свій локальний репозиторій до новоствореного на GitHub
+
+5)	//Зробити commit доданого файлу (консоль)
+	$ git add commands.txt
+	$ git commit -m "add commands.txt"
+	
+6)	//Зробити push доданого файлу на віддалений репозиторій на GitHub (консоль)
+	$ git push -u https://github.com/pbazyliuk/Lecture2part2.git master
+
+7)	//Створити нову гілку new-branch (консоль)
+	$ git branch new-branch
+
+8)	//Перейти на нову гілку (консоль)
+	$ git checkout new-branch
+
+10)	// Зробити commit файлу (консоль)
+	$ git add commands.txt
+	$ git commit -m "changes to commands.txt"
+
+11)	 //Зробити push файлу з локальної гілки new-branch на віддалену гілку new-branch 
+	(віддалена гілка автоматично створиться, якщо її не буде) (консоль)
+	$ git push -u https://github.com/pbazyliuk/Lecture2part2.git new-branch
+
+12) //Переключитись назад на гілку master (консоль)
+	$git checkout master
+
+13)	//Змерджити гілку new-branch на гілку master (поточна) (консоль)
+	$ git merge new-branch
+
+14) //Зробити push гілки master у гілку master у віддаленому репозиторії на GitHub (консоль)
+	$ git push -u https://github.com/pbazyliuk/Lecture2part2.git master
